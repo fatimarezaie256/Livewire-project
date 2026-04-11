@@ -1,5 +1,5 @@
 const image = document.getElementById("image");
-const imageList = ["images/banner-1.jpg", "images/banner-2.jpg"];
+const imageList = ["images/banner.jpg", "images/banner-2.jpg"];
 let index = 0;
 setInterval(() => {
     index++;

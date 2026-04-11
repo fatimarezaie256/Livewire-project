@@ -13,8 +13,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased font-sans">
-        <div class="w-full relative">
-             <header class="w-full flex justify-between items-center py-4 px-8 fixed top-0 left-0 bg-stone-200">
+        <div class="w-full relative bg-bg min-h-screen ">
+             <header class="w-full flex justify-between items-center py-4 px-8 fixed top-0 left-0 bg-transparent after:content[''] after:absolute after:right-0 after:w-full after:bottom-0 backdrop-blur-md after:h-px after:z-50 after:bg-black">
                         <div class="flex lg:justify-center lg:col-start-2">
                       <h1>Logo</h1>      
                     </div>
@@ -25,8 +25,11 @@
                         @endif
                     </div>
                     </header>
-                    <div class="mt-[73px]">
+                    <div class="mt-[70px]">
                         <livewire:hero/>
+                        <livewire:feature/>
+                        <livewire:team/>
+                        <livewire:f-q/>
                     </div>
         </div>
     </body>

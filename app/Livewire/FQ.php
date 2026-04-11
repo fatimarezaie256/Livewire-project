@@ -8,6 +8,35 @@ class FQ extends Component
 {
     public function render()
     {
-        return view('livewire.f-q');
+        
+        $allQuestions = [
+          [
+            "lorem ipsum dolor sit?",
+            "lorem ipsum dolor sit",
+            false
+          ],
+          [
+            "lorem ipsum dolor sit?",
+            "lorem ipsum dolor sit",
+            false
+          ],
+          [
+            "lorem ipsum dolor sit?",
+            "lorem ipsum dolor sit",
+            false
+          ],
+          [
+            "lorem ipsum dolor sit?",
+            "lorem ipsum dolor sit",
+            false
+          ],
+          [
+            "lorem ipsum dolor sit?",
+            "lorem ipsum dolor sit",
+            false
+          ],
+        ];
+        
+        return view('livewire.f-q')->with('data',$allQuestions);
     }
 }
