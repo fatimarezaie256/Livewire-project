@@ -6,16 +6,15 @@ use Livewire\Component;
 
 class FQ extends Component
 {
-    public $openIndex = null;
+        public $openIndex = null;
 
-    public function toggle($index)
-    {
-        if ($this->openIndex === $index) {
-            $this->openIndex = null; // close if same clicked
-        } else {
-            $this->openIndex = $index; // open clicked
+        public function toggle($index)
+        {
+            if ($this->openIndex === $index) {
+                $this->openIndex = null; 
+                $this->openIndex = $index; 
+            }
         }
-    }
 
     public function render()
     {
