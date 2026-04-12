@@ -1,5 +1,5 @@
 const image = document.getElementById("image");
-const imageList = ["images/banner.jpg", "images/banner-2.jpg"];
+const imageList = ["images/sharifi.jpg", "images/sharifi1.jpg"];
 let index = 0;
 setInterval(() => {
     index++;
@@ -7,4 +7,4 @@ setInterval(() => {
         index = 0;
     }
     image.setAttribute("src", imageList[index]);
-}, 1000);
+}, 5000);
