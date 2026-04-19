@@ -13,9 +13,9 @@ Route::view('profile', 'profile')
     ->name('profile');
 
 require __DIR__.'/auth.php';
-Route::prefix('/dashboard')->middleware(['auth', 'verified'])->group(function (){
-    Route::view('/','dashboard');
-    Route::view('profile','profile');
+Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(function (){
+//    Route::view('/','dashboard');
+   Route::view('profile','profile');
    Route::view('employee','livewire.employee.index');
    Route::view('contract','livewire.contract.index');
    Route::view('school','livewire.school.index');
