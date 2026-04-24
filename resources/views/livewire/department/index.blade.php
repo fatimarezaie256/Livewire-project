@@ -1,3 +1,3 @@
-<div>
-    {{-- The best athlete wants his opponent at his best. --}}
-</div>
+<x-app-layout>
+    <livewire:dashboard.aside/>
+</x-app-layout>

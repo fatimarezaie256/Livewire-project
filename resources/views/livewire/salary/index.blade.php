@@ -1,3 +1,3 @@
-<div>
-    {{-- Close your eyes. Count to one. That is how long forever feels. --}}
-</div>
+<x-app-layout>
+    <livewire:dashboard.aside/>
+</x-app-layout>
